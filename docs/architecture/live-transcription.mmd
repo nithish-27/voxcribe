@@ -1,0 +1,19 @@
+sequenceDiagram
+    participant B as Browser
+    participant S as Server
+    participant M as Speech model
+    B->>S: Opens the live connection
+    S-->>B: Ready
+    loop Every half second
+        B->>S: Sends a piece of sound
+    end
+    loop At every step
+        S->>M: Reads all unsettled sound
+        M-->>S: Segments of text
+        Note over S: All but the last segment are settled,<br/>and their sound is dropped
+        S-->>B: Final text (appended)
+        S-->>B: Live text (replaced)
+    end
+    B->>S: Stop
+    S-->>B: Last final text and Done
+    B->>S: Save (ordinary request)
