@@ -53,13 +53,17 @@ Everything is set in `.env` (template: `.env.example`). Two values are baked in 
 - `WHISPER_MODEL` (`tiny`, `base`, `small`, `medium`, `large-v3`): `docker compose build backend`
 - `NEXT_PUBLIC_API_URL` (backend URL as the browser sees it): `docker compose build frontend`
 
+## Architecture
+
+![Voxcribe architecture](docs/architecture/architecture.png)
+
 ## Documentation
 
 | Document | Contents |
 |---|---|
 | [Technical documentation (Word)](docs/Voxcribe-Technical-Documentation.docx) | Pipeline design, data model, security, limits |
 | [API documentation (Word)](docs/Voxcribe-API-Documentation.docx) | REST endpoints and the WebSocket protocol |
-| [Architecture diagrams](docs/ARCHITECTURE.md) | System, sequence, component and data diagrams |
+| [Architecture diagrams](docs/ARCHITECTURE.md) | System overview and live transcription flow, as images |
 | [Backend README](backend/README.md) | Layout, configuration, tests, adding a speech provider |
 | [Frontend README](frontend/README.md) | Pages, recording hook, build |
 
