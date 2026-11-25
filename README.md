@@ -58,7 +58,7 @@ Everything is set in `.env` (template: `.env.example`). Two values are baked in 
 | Document | Contents |
 |---|---|
 | [Technical documentation (Word)](docs/Voxcribe-Technical-Documentation.docx) | Pipeline design, data model, security, limits |
-| [API documentation](docs/API.md) | REST endpoints and the WebSocket protocol |
+| [API documentation (Word)](docs/Voxcribe-API-Documentation.docx) | REST endpoints and the WebSocket protocol |
 | [Architecture diagrams](docs/ARCHITECTURE.md) | System, sequence, component and data diagrams |
 | [Backend README](backend/README.md) | Layout, configuration, tests, adding a speech provider |
 | [Frontend README](frontend/README.md) | Pages, recording hook, build |
